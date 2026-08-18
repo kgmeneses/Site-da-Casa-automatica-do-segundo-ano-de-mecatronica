@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+:root {
+    --azul-principal: #2563EB;
+    --azul-escuro: #1E3A8A;
+    --azul-claro: #60A5FA;
+
+    --fundo: #111827;
+    --cinza-escuro: #1F2937;
+    --cinza-medio: #4B5563;
+    --cinza: #6B7280;
+
+    --texto-principal: #F3F4F6;
+    --texto-secundario: #9CA3AF;
+    --branco: #FFFFFF;
+}
