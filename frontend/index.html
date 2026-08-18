@@ -1,15 +1,195 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Início</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Automatizada — Projeto de Mecatrônica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Casa Automatizada</h1>
-    </header>
-    
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-dot"></span>
+      Casa Automatizada
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-link active">Início</a>
+      <a href="dispositivos.html" class="nav-link">Dispositivos</a>
+      <a href="assistente.html" class="nav-link">Assistente IA</a>
+      <a href="historico.html" class="nav-link">Histórico</a>
+      <a href="sobre.html" class="nav-link">Sobre o projeto</a>
+      <a href="login.html" class="nav-link nav-link-login">Entrar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="pulse"></span>Maquete residencial automatizada</p>
+      <h1>Uma casa em miniatura,<br>com automação real.</h1>
+      <p class="hero-text">
+        Esta é a maquete apresentada na feira de ciências: uma residência em escala reduzida
+        onde a iluminação, o portão, o elevador e o alarme de segurança funcionam de verdade,
+        integrados e controlados a partir de uma única interface.
+      </p>
+      <div class="hero-actions">
+        <a href="#funcionalidades" class="btn btn-primary">Ver o que a maquete faz</a>
+        <a href="#mecatronica" class="btn btn-secondary">O que é mecatrônica</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="funcionalidades">
+    <div class="features-inner">
+      <div class="section-head">
+        <p class="eyebrow">Funcionalidades</p>
+        <h2>O que foi automatizado na maquete</h2>
+        <p class="hero-text">
+          Cada sistema da casa foi construído para funcionar de forma independente e, ao
+          mesmo tempo, se comunicar com os demais a partir de um painel único.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.5.5.8 1.1.8 1.8V16h6.4v-.7c0-.7.3-1.3.8-1.8A6 6 0 0 0 12 3Z"/></svg>
+          </div>
+          <h3>Iluminação</h3>
+          <p>As luzes de cada cômodo podem ser ligadas e desligadas individualmente, direto pelo painel.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V7l8-4 8 4v14M4 21h16M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Portão</h3>
+          <p>O portão da maquete abre e fecha remotamente, com o estado atual sempre visível na tela.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 8h6M9 12h6M9 16h2"/></svg>
+          </div>
+          <h3>Elevador</h3>
+          <p>Um elevador miniatura se move entre os andares da casa a partir de um comando simples.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6.5V11c0 4.8 3.2 8.7 8 10 4.8-1.3 8-5.2 8-10V6.5L12 3Z"/><path d="M12 8v4.5M12 15.5h.01"/></svg>
+          </div>
+          <h3>Alarme de segurança</h3>
+          <p>Um sistema de alarme monitora a casa e avisa quando algo fora do padrão é detectado.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 3v4M15 3v4M8 13h.01M12 13h.01M16 13h.01"/></svg>
+          </div>
+          <h3>Comandos por IA</h3>
+          <p>Também é possível pedir uma ação em linguagem natural, como "apague as luzes da sala".</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="status">
+    <div class="status-inner">
+      <div class="status-text">
+        <p class="eyebrow">Estado em tempo real</p>
+        <h2>Acompanhe a maquete sem precisar perguntar.</h2>
+        <p class="hero-text">
+          Toda ação feita na maquete é registrada no histórico, e o estado de cada sistema
+          é atualizado ao vivo na tela — luz acesa, portão aberto, elevador em movimento,
+          alarme ativado.
+        </p>
+      </div>
+      <div class="status-panel" aria-hidden="true">
+        <div class="status-row"><span>Luz — sala</span><span class="tag tag-on">ligada</span></div>
+        <div class="status-row"><span>Luz — quarto</span><span class="tag tag-off">desligada</span></div>
+        <div class="status-row"><span>Portão</span><span class="tag tag-off">fechado</span></div>
+        <div class="status-row"><span>Elevador</span><span class="tag tag-on">térreo</span></div>
+        <div class="status-row"><span>Alarme</span><span class="tag tag-off">desativado</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mecatronica" id="mecatronica">
+    <div class="mecatronica-inner">
+      <div class="section-head">
+        <p class="eyebrow">Curso técnico em mecatrônica</p>
+        <h2>Onde a mecânica encontra o controle e a programação</h2>
+        <p class="hero-text">
+          Mecatrônica é a área que une mecânica, eletrônica, computação e controle
+          automático para projetar sistemas capazes de perceber o ambiente ao redor e
+          agir sobre ele. Um elevador que se move sozinho, um portão que reconhece um
+          comando e um alarme que reage a uma mudança são exemplos práticos desse tipo
+          de sistema.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="pillar">
+          <h3>Mecânica</h3>
+          <p>A estrutura física que se move: o trilho do portão, o eixo do elevador, as engrenagens que transformam energia em movimento.</p>
+        </article>
+        <article class="pillar">
+          <h3>Eletrônica</h3>
+          <p>Os circuitos que dão vida à estrutura, permitindo enviar e receber sinais entre as partes da casa.</p>
+        </article>
+        <article class="pillar">
+          <h3>Computação</h3>
+          <p>O código que interpreta comandos, decide o que fazer e organiza a comunicação entre a casa e a interface web.</p>
+        </article>
+        <article class="pillar">
+          <h3>Controle automático</h3>
+          <p>A lógica que garante que cada ação aconteça na hora certa e que o sistema saiba em que estado está.</p>
+        </article>
+      </div>
+
+      <p class="hero-text mecatronica-closing">
+        A maquete desta feira coloca esses quatro pilares para funcionar juntos: ela
+        percebe um comando, decide o que fazer e movimenta uma parte real da estrutura —
+        o mesmo ciclo de sentir, decidir e agir que um técnico em mecatrônica projeta em
+        qualquer sistema automatizado, seja em uma casa, uma fábrica ou uma linha de
+        produção.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>Projeto de feira de ciências, 2026</span>
+    <span>Técnico em mecatrônica</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('nav');
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.classList.toggle('open', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+</script>
+
 </body>
 </html>
